@@ -134,7 +134,7 @@ var pageTitle, result;
 
 export default {
     onload: ({ extensionAPI }) => {
-        window.roamAlphaAPI.ui.commandPalette.addCommand({
+        extensionAPI.ui.commandPalette.addCommand({
             label: "Open Library import",
             callback: () => {
                 const uid = window.roamAlphaAPI.ui.getFocusedBlock()?.["block-uid"];
@@ -305,9 +305,6 @@ export default {
         };
     },
     onunload: () => {
-        window.roamAlphaAPI.ui.commandPalette.removeCommand({
-            label: 'Open Library import'
-        });
         if (window.roamjs?.extension?.smartblocks) {
             window.roamjs.extension.smartblocks.unregisterCommand("OPENLIBRARY");
         };
