@@ -1,5 +1,8 @@
 Import book cover and metadata from the Open Library (https://openlibrary.org/). Enhance your Readwise.io imported data or start your own 'must read' list!
 
+**New:**
+- now compatible with Roam Research Hotkeys
+
 Simply navigate to a page in your graph with a book title as the page title. 
 
 You can trigger the extension by 
